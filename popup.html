@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      .container {
+        padding: 10px;
+      }
+      .box {
+        display: flex;
+        width: 450px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      p {
+        margin-bottom: 0px;
+      }
+    </style>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form class="box">
+        <b
+          >Instructions: Use "{x}" to specify where the copy # will go in the
+          prefix/suffix.</b
+        >
+        <p
+          id="selectedFile"
+          style="text-align: center; display: block; width: 100%;"
+        >
+          File Selected: <b>(None)</b>
+        </p>
+        <p style="display: flex;">
+          Number of Copies:<input
+            style="margin-left: 3px; width: 100px"
+            id="copyCount"
+            type="text"
+          />
+        </p>
+        <p>
+          Prefix: <input style="display: inline;" id="namePrefix" type="text" />
+        </p>
+        <p>
+          Suffix: <input style="display: inline;" id="nameSuffix" type="text" />
+        </p>
+        <p style="text-align: center;">
+          <input type="submit" id="copyButton" value="Make Copies" />
+        </p>
+
+        <p
+          id="progressMessage"
+          style="text-align: center; display: none; width: 100%;"
+        >
+          TEST 123
+        </p>
+
+        <p id="sharedLinks" style="display: block; width: 100%;">
+          Shared Links:
+          <textarea
+            id="sharedLinksText"
+            style="width: 100%;"
+            rows="16"
+          ></textarea>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
