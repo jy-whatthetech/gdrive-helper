@@ -22,9 +22,7 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
       function(tabs) {
         // get the auth token then pass token to active tab so content.js can handle it
         chrome.identity.getAuthToken({ interactive: true }, function(token) {
-          console.log("AUTH TOKEN OBTAINED");
-          console.log(token);
-
+          // auth token will be used in the `Authorization` attribute of the header in REST API calls
           const fetchOptions = {
             headers: {
               Authorization: `Bearer ${token}`

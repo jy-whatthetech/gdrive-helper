@@ -13,8 +13,8 @@ const NUMBER_TOKEN = "{x}";
 
 const API_KEY = config.driveAPIKey; // read this from config file
 const DRIVE_BASEURL = "https://www.googleapis.com/drive/v3/";
-const testVar = "abc";
 
+// utility function to replace all occurrences of a token in a string
 function replaceAll(s, token, replace) {
   const pieces = s.split(token);
   const resultingString = pieces.join(replace);
