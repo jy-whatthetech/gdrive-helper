@@ -27,6 +27,8 @@ git clone https://github.com/jy-whatthetech/gdrive-helper.git
 
 2. Go to chrome://extensions/
 
+2a. TODO: add config.js file for API Key
+
 3. Select the "Load Unpacked" button, and choose the "gdrive-helper" folder.
 
 4. You should now see "Google Drive Copy Tool" in your list of loaded extensions.
